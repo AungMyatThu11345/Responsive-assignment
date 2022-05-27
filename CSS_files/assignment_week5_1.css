@@ -1,0 +1,138 @@
+.box1{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.box2{
+    background-color: white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.box2>h1{
+    color: blue;
+    size: 50px;
+}
+.box2>nav{
+    width: 50%;
+    margin-left: 25%;
+}
+nav>ul>li{
+    list-style: none;
+
+}
+nav>ul>li>a{
+    width: 23%;
+    float: left;
+}
+nav>ul>li:hover a{
+    color: blue;
+}
+.box3{
+    clear: both;
+}
+.box3>img{
+    width: 100%;
+    position: relative;
+}
+.sub_con{
+    background: white;
+    width: 300px;
+    color: black;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    padding: 20px;
+}
+.s_box{
+    padding: 20px;
+    background-color: rgb(0, 0, 225);
+    width: 100px;
+}
+.s_box>a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.s_box:hover,.s_box:hover a{
+    background-color: rgb(0, 0, 255,0.8);
+}
+.parent_item{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 20%;
+    margin: 2%;
+}
+.label a:hover .label{
+    color: blue;
+}
+.box5{
+    width: 100%;
+    background: rgb(0, 0, 255,0.8);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: auto;
+}
+input{
+    border: 1px solid white;
+    background: rgb(0, 0, 255,0.8);
+    height: 50px;
+    width: 35%;
+}
+::placeholder{
+    color: white;
+}
+button{
+    background-color:white;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 225);
+    width: 20%;
+}
+button>a{
+    color: blue;
+}
+/*start from small device to large device*/
+@media (min-width:150px) and (max-width:599px){
+    .box2{
+        width: 100%;
+    }
+    .box2>nav{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    nav>ul>li>a,nav>ul>li{
+        width: 100%;
+        clear: both;
+    }
+    .sub_con{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        padding: auto;
+        background-color: white;
+    }
+    .item{
+        width: 100%;
+    }
+    input,button{
+        width: 200px;
+        margin: 10px;
+        display: inline-block;
+    }
+}
+@media(min-width:600px) and (max-width:799px){
+    .item{
+        width: 45%;
+        float: left;
+        margin: 1%;
+    }
+}
